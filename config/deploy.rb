@@ -5,7 +5,7 @@ set :rvm_ruby_string, 'ruby-2.0.0-p247'   # use the same ruby as used locally fo
 set :rvm_autolibs_flag, "read-only"       # more info: rvm help autolibs
 set :rvm_type, :system                    # take that RVM
 
-set :application, "myapp"
+set :application, "railsapp"
 set :repository,  "https://github.com/huit/railsapp-myapp.git"
 
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
