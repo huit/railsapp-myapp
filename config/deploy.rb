@@ -16,7 +16,7 @@ set :deploy_to, "/srv/www/rails/railsapp"
 
 set :bundle_flags, "--deployment --binstubs"
 
-set :ssh_options, {:forward_agent => true, keys: ['~/.vagrant.d/insecure_private_key']}
+set :ssh_options, {:forward_agent => true, :keys => [File.join(ENV["HOME"], ".vagrant.d", "insecure_private_key")]}
 
 role :web, "10.0.2.15"                          # Your HTTP server, Apache/etc
 role :app, "10.0.2.15"                          # This may be the same as your `Web` server
